@@ -1,0 +1,13 @@
+kubectl create namespace ingress
+kubectl create namespace ingressdemo
+
+kubectl apply -f leaderboardapi-deployment.yaml
+kubectl apply -f leaderboardapi-service.yaml
+kubectl apply -f gamingwebapp-deployment.yaml
+kubectl apply -f gamingwebapp-service.yaml
+kubectl apply -f secret.yaml
+
+kubectl apply -f DeployDefaultBackend.yaml
+kubectl apply -f DeployIngressController.yaml
+kubectl apply -f DeployServiceIngressService.yaml
+kubectl apply -f gamingwebapp-ingress.yaml

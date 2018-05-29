@@ -1,0 +1,2 @@
+kubectl apply -f gamingwebapp-deployment.yaml
+kubectl apply -f gamingwebapp-service.yaml

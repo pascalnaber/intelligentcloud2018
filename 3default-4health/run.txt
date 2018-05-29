@@ -1,0 +1,5 @@
+kubectl apply -f leaderboardapi-deployment.yaml
+
+kubectl apply -f kuardlivenesscheck.yaml
+kubectl delete pod kuard
+kubectl port-forward kuard 8585:8080

@@ -1,0 +1,5 @@
+kubectl create namespace service
+
+kubectl apply -f C:\repos\pascal\clouddemo\Demos\4service-2backend\secret.yaml
+
+kubectl create secret docker-registry clouddemoimages --namespace service --docker-server=https://clouddemo.azurecr.io --docker-username=clouddemo --docker-password=x+GB730zUiQuSkrO70M9YxMfPoS/A4R= --docker-email=pnaber@xpirit.com

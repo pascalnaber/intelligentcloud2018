@@ -1,0 +1,3 @@
+kubectl apply -f leaderboardapi-deployment.yaml
+
+kubectl apply -f secret.yaml

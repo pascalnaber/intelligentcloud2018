@@ -1,0 +1,2 @@
+kubectl apply -f leaderboardapi-deployment.yaml
+kubectl apply -f leaderboardapi-service.yaml
